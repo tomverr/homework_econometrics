@@ -30,7 +30,6 @@ df_rates <- read_excel("data/DataSetInterestRates.xlsx")
 
 
 
-# 1. Description of the sample
 # 1] Description of the sample
 
 \vspace{20pt}
