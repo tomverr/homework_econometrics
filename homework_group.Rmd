@@ -1,0 +1,83 @@
+---
+title: "Econometrics - Homework Assignment"
+author: “Maïté Lamothe - Florentine Oliveira - Tom Verrier"
+date: "10/11/2019"
+output:
+   pdf_document:
+      fig_caption: true
+      number_sections: false
+---
+\newpage
+\tableofcontents
+\newpage
+
+```{r, include = FALSE, warning=FALSE, message=FALSE, error=FALSE} 
+list.of.packages <- c("tidyverse", "knitr", "haven", "stargazer", "dummies", "car", "AER", "dplyr", "readxl")
+new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
+if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
+
+library("tidyverse")
+library("dplyr")
+library("knitr")
+library("haven")
+library("stargazer")
+library("dummies")
+library("readxl")
+
+df_wages <- read_excel("data/DataSetWages.xlsx")
+df_rates <- read_excel("data/DataSetInterestRates.xlsx")
+```
+
+
+
+# 1. Description of the sample
+
+## Question 1
+
+```{r, include = FALSE}
+table1 <- df_wages %>%
+  select(SALARY, SALBEGIN, EDUC) %>%
+  gather(key = variable, value = value, SALARY:SALBEGIN:EDUC) %>%
+  group_by(variable) %>%
+  summarise( 
+            Mean=mean(value, na.rm=T), 
+            Sd=sd(value, na.rm=T),
+            Min=min(value, na.rm=T),
+            Max=max(value, na.rm=T)) %>%
+  ungroup(variable) 
+
+table2 <- df_wages %>%
+  select(GENDER, MINORITY) %>%
+  gather(key = variable, value = value, GENDER:MINORITY) %>%
+  group_by(variable) %>%
+  summarise( 
+            Mean=mean(value, na.rm=T)) %>%
+  ungroup(variable) 
+```
+
+- interprération écart type EDUC 
+- comparaison sal et salbegin : gros écart d'écart type, différence éducation, salaire d'efficience (mean)
+- interprétations sur gender et minotity: sample composed of more women ou jsp + regarder interprétation  dummies gender et tout : much diversity 
++ ajouter tableau stats jobcat + commenter
+
+
+```{r, echo = FALSE}
+kable(table1, caption = 'Some statistics')
+kable(table2, caption = 'Some other statistics')
+```
+
+## Question 2
+
+```{r , fig.width = 4, fig.height = 3, warning = FALSE, echo = FALSE, error = FALSE, message = FALSE, fig.align='center'}
+plot_salary <- ggplot(df_wages, aes(x=SALARY))  +
+  theme_bw() +
+  labs(x = "Salary") +
+  labs(y="Density") +
+  labs(title = "Distribution of the salary") +
+  geom_density(colour="white", fill="red") 
+
+plot_salary
+```
+
+It could be a good idea to use the logarithm of the variable Salary because the logarithm linearizes and smoothes the variable. In facts it decreases the expanse of the values that the variable takes (max-min is lower). Moreover, the interest to use the logarithm of this variable is that we can easily interpret the coefficient as an elasticity in a log-log model.
+
