@@ -31,6 +31,9 @@ df_rates <- read_excel("data/DataSetInterestRates.xlsx")
 
 
 # 1. Description of the sample
+# 1] Description of the sample
+
+\vspace{20pt}
 
 ## Question 1
 
@@ -66,6 +69,8 @@ kable(table1, caption = 'Some statistics')
 kable(table2, caption = 'Some other statistics')
 ```
 
+\vspace{20pt}
+
 ## Question 2
 
 ```{r , fig.width = 4, fig.height = 3, warning = FALSE, echo = FALSE, error = FALSE, message = FALSE, fig.align='center'}
@@ -80,4 +85,141 @@ plot_salary
 ```
 
 It could be a good idea to use the logarithm of the variable Salary because the logarithm linearizes and smoothes the variable. In facts it decreases the expanse of the values that the variable takes (max-min is lower). Moreover, the interest to use the logarithm of this variable is that we can easily interpret the coefficient as an elasticity in a log-log model.
+
+\vspace{20pt}
+
+## Question 3
+
+```{r , fig.width = 4, fig.height = 3, warning = FALSE, echo = FALSE, error = FALSE, message = FALSE, fig.align='center'}
+plot_LogSalary <- ggplot(df_wages, aes(x=LOGSAL))  +
+  theme_bw() +
+  labs(x = "Log(salary)") +
+  labs(y="Density") +
+  labs(title = "Distribution of the Log(salary)") +
+  geom_density(colour="white", fill="red") 
+
+plot_LogSalary
+```
+
+We see that the variable LogSal is much more readable. The distribution is less extensive.
+
+\newpage
+
+# 2] Linear Regression
+
+\vspace{20pt}
+
+## Question 1
+
+### a)
+
+We estimate the model: $LogSal = \alpha + \beta Education + \epsilon$ (**R1**)
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
+R1 <- lm(LOGSAL ~ EDUC, data = df_wages)
+stargazer(R1,  header=FALSE, type='latex')
+```
+
+We can see on the *Table 2* that the variable Education is statistically significant at the threshold of 1%, as well as the intercept.
+
+### b)
+
+This is a log-level linear model. Then, an increase in one year of education lead to an increase of 100.$\hat\beta = 100*0.096 = 9,6$ in the Salary.
+
+### c)
+
+\vspace{20pt}
+
+## Question 2
+
+We now estimate the model: $LogSal = \alpha + \beta_1 Education + \beta_2 LogSalBegin + \epsilon$ (**R2**). The results are shown in *Table 4*.
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
+R2 <- lm(LOGSAL ~ EDUC + LOGSALBEGIN, data = df_wages)
+stargazer(R2,  header=FALSE, type='latex')
+```
+
+### a) 
+
+The impact of education on LogSal is different from the first model **R1** because we have added an explanatory variable in the model.      
+Mathematically, the matrix X of the explanatory variable is now different. Therefore the vector of estimated coefficients, which is equal to $(X'X)^{-1}X'Y$, differs. There was an omitted variable bias.
+
+### b)
+
+Theoretically:
+total effect is the effect shown with model R1
+direct effect is the one of model R2
+the indirect effect is the one captures by the regression : logsalbegin on a constant and Education
+We are supposed to find that R1=R2+ 
+
+### c)
+
+We regress $LogSalBegin$ on a constant and $Education$. Results are shown in *Table 5*.
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
+I1 <- lm(LOGSALBEGIN ~ EDUC, data = df_wages)
+stargazer(I1,  header=FALSE, type='latex')
+```
+
+### d) 
+
+\vspace{20pt}
+
+## Question 3
+
+\vspace{20pt}
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE , include = FALSE}
+I2 <- lm(LOGSALBEGIN ~ 1, data = df_wages)
+stargazer(I2,  header=FALSE, type='latex')
+resid_LOGSALBEGIN <- resid(I2)
+
+I3 <- lm(LOGSAL ~ 1, data = df_wages)
+stargazer(I3,  header=FALSE, type='latex')
+resid_LOGSAL <- resid(I3)
+
+I4 <- lm(EDUC ~ 1, data = df_wages)
+stargazer(I4, header=FALSE, type='latex')
+resid_EDUC <- resid(I4)
+```
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE , include = FALSE}
+df_wages <- df_wages %>%
+  mutate(DMLogSal = df_wages$LOGSAL-mean(df_wages$LOGSAL),
+         DMeducation = df_wages$EDUC-mean(df_wages$EDUC),
+         DMLogSalBegin = df_wages$LOGSALBEGIN-mean(df_wages$LOGSALBEGIN))
+```
+
+Results of the regression of the model $\overline{LogSal}$ $= \beta_1$ $\overline{education}$ $+ \beta_2$ $\overline{LogSalBegin}$ + $\epsilon$ are shown in *Table 6*.        
+
+Results of the regresion of the model $DMLogSal = \beta_1 DMeducation + \beta_2 DMLogSalBegin + \epsilon$ are shown in *Table 7*.
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
+reg_resid <- lm(resid_LOGSAL ~ 0 + resid_EDUC + resid_LOGSALBEGIN) 
+stargazer(reg_resid,  header=FALSE, type='latex')
+
+reg_DM <- lm(DMLogSal ~ 0 + DMeducation + DMLogSalBegin, data = df_wages) 
+stargazer(reg_DM,  header=FALSE, type='latex')
+```
+
+
+\vspace{10pt}
+
+### a) 
+
+As we can see in *Table 6* and *Table 7*, the estimated coefficients are the same. Proove that residuals is the same as demean.
+
+### b) 
+
+Proove that demin without constant ad demean with constant leads to the same estimates.
+
+\vspace{20pt}
+
+
+
+
+
+
+
+
+
 
