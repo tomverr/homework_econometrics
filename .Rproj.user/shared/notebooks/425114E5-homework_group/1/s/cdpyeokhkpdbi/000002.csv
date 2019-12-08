@@ -1,0 +1,4 @@
+"0","R4 <- lm(LOGSAL ~ EDUC + GENDER + MINORITY + JOBCAT2 + JOBCAT3, data = df_wages)
+"
+"2","Error in is.data.frame(data) : object 'df_wages' not found
+"

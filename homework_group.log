@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.9)  8 DEC 2019 10:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.9)  8 DEC 2019 13:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -140,10 +140,7 @@ LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks20
 \inpenc@posthook=\toks21
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
-Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
-tim
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -297,7 +294,10 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2019/02/28 v2.7b Micro-typographical refinements (RS)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -319,27 +319,22 @@ LaTeX Info: Redefining \lslig on input line 914.
 Package microtype Info: Loading configuration file microtype.cfg.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2019/02/28 v2.7b microtype main configuration file (RS)
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2018/04/16 v5.8 Page Geometry
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-\Gm@cnth=\count102
-\Gm@cntv=\count103
-\c@Gm@tempcnt=\count104
-\Gm@bindingoffset=\dimen113
-\Gm@wd@mp=\dimen114
-\Gm@odd@mp=\dimen115
-\Gm@even@mp=\dimen116
-\Gm@layoutwidth=\dimen117
-\Gm@layoutheight=\dimen118
-\Gm@layouthoffset=\dimen119
-\Gm@layoutvoffset=\dimen120
-\Gm@dimlist=\toks24
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count102
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
@@ -347,14 +342,15 @@ Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
-Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
-Package hobsub Info: Skipping package `ifpdf' (already loaded).
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package hobsub Info: Skipping package `etexcmds' (already loaded).
+Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -373,26 +369,29 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen121
-\Hy@linkcounter=\count105
-\Hy@pagecounter=\count106
+\@linkdim=\dimen113
+\Hy@linkcounter=\count103
+\Hy@pagecounter=\count104
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count107
+\Hy@SavedSpaceFactor=\count105
 (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4393.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
 Package hyperref Info: Link nesting OFF on input line 4524.
@@ -401,16 +400,16 @@ Package hyperref Info: Plain pages OFF on input line 4534.
 Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
-\c@Hy@tempcnt=\count108
+\c@Hy@tempcnt=\count106
 (/usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5125.
-\XeTeXLinkMargin=\dimen122
-\Fld@menulength=\count109
-\Field@Width=\dimen123
-\Fld@charsize=\dimen124
+\XeTeXLinkMargin=\dimen114
+\Fld@menulength=\count107
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
 Package hyperref Info: Hyper figures OFF on input line 6380.
 Package hyperref Info: Link nesting OFF on input line 6385.
 Package hyperref Info: Hyper index ON on input line 6388.
@@ -420,15 +419,15 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6405.
 Package hyperref Info: PDF/A mode OFF on input line 6410.
 LaTeX Info: Redefining \ref on input line 6450.
 LaTeX Info: Redefining \pageref on input line 6454.
-\Hy@abspage=\count110
-\c@Item=\count111
-\c@Hfootnote=\count112
+\Hy@abspage=\count108
+\c@Item=\count109
+\c@Hfootnote=\count110
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
-\Fld@listcount=\count113
-\c@bookmark@seq@number=\count114
+\Fld@listcount=\count111
+\c@bookmark@seq@number=\count112
 (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -436,29 +435,37 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip47
 )
-Package hyperref Info: Option `unicode' set `true' on input line 30.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Option `breaklinks' set `true' on input line 30.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
+Package hyperref Info: Option `breaklinks' set `true' on input line 35.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+\Gm@cnth=\count113
+\Gm@cntv=\count114
+\c@Gm@tempcnt=\count115
+\Gm@bindingoffset=\dimen117
+\Gm@wd@mp=\dimen118
+\Gm@odd@mp=\dimen119
+\Gm@even@mp=\dimen120
+\Gm@layoutwidth=\dimen121
+\Gm@layoutheight=\dimen122
+\Gm@layouthoffset=\dimen123
+\Gm@layoutvoffset=\dimen124
+\Gm@dimlist=\toks24
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)+ FMi change
 \LTleft=\skip48
 \LTright=\skip49
 \LTpre=\skip50
 \LTpost=\skip51
-\LTchunksize=\count115
+\LTchunksize=\count116
 \LTcapwidth=\dimen125
 \LT@head=\box29
 \LT@firsthead=\box30
 \LT@foot=\box31
 \LT@lastfoot=\box32
-\LT@cols=\count116
-\LT@rows=\count117
-\c@LT@tables=\count118
-\c@LT@chunks=\count119
+\LT@cols=\count117
+\LT@rows=\count118
+\c@LT@tables=\count119
+\c@LT@chunks=\count120
 \LT@p@ftn=\toks25
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
@@ -472,13 +479,17 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \cmidrulesep=\dimen133
 \cmidrulekern=\dimen134
 \defaultaddspace=\dimen135
-\@cmidla=\count120
-\@cmidlb=\count121
+\@cmidla=\count121
+\@cmidlb=\count122
 \@aboverulesep=\dimen136
 \@belowrulesep=\dimen137
-\@thisruleclass=\count122
-\@lastruleclass=\count123
+\@thisruleclass=\count123
+\@lastruleclass=\count124
 \@thisrulewidth=\dimen138
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box33
+\fn@width=\dimen139
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
@@ -492,20 +503,15 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen139
-\Gin@req@width=\dimen140
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
-Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
-(/usr/local/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count124
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/titling/titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip52
 \thanksmargin=\skip53
@@ -535,36 +541,39 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 \openout1 = `homework_group.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 96.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 96.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 89.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 96.
+LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 96.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \microtypecontext on input line 89.
+LaTeX Info: Redefining \microtypecontext on input line 96.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -578,6 +587,22 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
+\AtBeginShipoutBox=\box34
+Package hyperref Info: Link coloring OFF on input line 96.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count125
+)
+LaTeX Info: Redefining \ref on input line 96.
+LaTeX Info: Redefining \pageref on input line 96.
+LaTeX Info: Redefining \nameref on input line 96.
+(./homework_group.out) (./homework_group.out)
+\@outlinefile=\write3
+\openout3 = `homework_group.out'.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -612,32 +637,16 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 89.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
-Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
-)
-\c@section@level=\count125
-)
-LaTeX Info: Redefining \ref on input line 89.
-LaTeX Info: Redefining \pageref on input line 89.
-LaTeX Info: Redefining \nameref on input line 89.
-(./homework_group.out) (./homework_group.out)
-\@outlinefile=\write3
-\openout3 = `homework_group.out'.
-
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count126
-\scratchdimen=\dimen141
-\scratchbox=\box34
+\scratchdimen=\dimen142
+\scratchbox=\box35
 \nofMPsegments=\count127
 \nofMParguments=\count128
 \everyMPshowfont=\toks26
 \MPscratchCnt=\count129
-\MPscratchDim=\dimen142
+\MPscratchDim=\dimen143
 \MPnumerator=\count130
 \makeMPintoPDFobject=\count131
 \everyMPtoPDFconversion=\toks27
@@ -697,90 +706,89 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 \openout4 = `homework_group.toc'.
 
 [2]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 108.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 115.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<homework_group_files/figure-latex/unnamed-chunk-4-1.pdf, id=139, 279.0425pt x 
+<homework_group_files/figure-latex/unnamed-chunk-4-1.pdf, id=149, 279.0425pt x 
 206.7725pt>
 File: homework_group_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (typ
 e pdf)
 <use homework_group_files/figure-latex/unnamed-chunk-4-1.pdf>
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-4-1.pd
-f  used on input line 156.
+f  used on input line 163.
 (pdftex.def)             Requested size: 279.05032pt x 206.77829pt.
 [3 <./homework_group_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<homework_group_files/figure-latex/unnamed-chunk-5-1.pdf, id=157, 279.0425pt x 
+<homework_group_files/figure-latex/unnamed-chunk-5-1.pdf, id=168, 279.0425pt x 
 206.7725pt>
 File: homework_group_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (typ
 e pdf)
 <use homework_group_files/figure-latex/unnamed-chunk-5-1.pdf>
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-5-1.pd
-f  used on input line 170.
+f  used on input line 177.
 (pdftex.def)             Requested size: 279.05032pt x 206.77829pt.
 [4 <./homework_group_files/figure-latex/unnamed-chunk-5-1.pdf>] [5] [6] [7]
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 459.
+(amsmath)                 on input line 466.
 
 [8]
-Overfull \hbox (4.53242pt too wide) in paragraph at lines 534--540
+Overfull \hbox (4.53242pt too wide) in paragraph at lines 541--547
 []\T1/lmr/m/n/10 (-20) If we fo-cus only on the re-gres-sion of LogSal on ed-u-
 ca-tion, we ob-tain that: $[] \OT1/lmr/m/n/10 (-20) = []\OML/lmm/m/it/10 :[] \O
 T1/lmr/m/n/10 (-20) =
  []
 
 [9] [10]
-<homework_group_files/figure-latex/unnamed-chunk-22-1.pdf, id=233, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-1.pdf, id=243, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (ty
 pe pdf)
 <use homework_group_files/figure-latex/unnamed-chunk-22-1.pdf>
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-22-1.p
-df  used on input line 626.
+df  used on input line 633.
 (pdftex.def)             Requested size: 283.06975pt x 207.78523pt.
-<homework_group_files/figure-latex/unnamed-chunk-22-2.pdf, id=234, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-2.pdf, id=244, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-2.pdf Graphic file (ty
 pe pdf)
 <use homework_group_files/figure-latex/unnamed-chunk-22-2.pdf>
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-22-2.p
-df  used on input line 628.
+df  used on input line 635.
 (pdftex.def)             Requested size: 283.06975pt x 207.78523pt.
-<homework_group_files/figure-latex/unnamed-chunk-22-3.pdf, id=235, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-3.pdf, id=245, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-3.pdf Graphic file (ty
 pe pdf)
 <use homework_group_files/figure-latex/unnamed-chunk-22-3.pdf>
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-22-3.p
-df  used on input line 630.
+df  used on input line 637.
 (pdftex.def)             Requested size: 283.06975pt x 207.78523pt.
 [11 <./homework_group_files/figure-latex/unnamed-chunk-22-1.pdf> <./homework_gr
 oup_files/figure-latex/unnamed-chunk-22-2.pdf>] [12 <./homework_group_files/fig
 ure-latex/unnamed-chunk-22-3.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 741.
-[13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 741.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 801.
+[13] [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 801.
 (./homework_group.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 741.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 741.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 801.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 801.
 Package rerunfilecheck Info: File `homework_group.out' has not changed.
-(rerunfilecheck)             Checksum: 8581E4070B5D1215046EB92140224CA3;2435.
+(rerunfilecheck)             Checksum: 80F1D1B453B0C53F756178273DD5F51F;2645.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 741.
  ) 
 Here is how much of TeX's memory you used:
- 12600 strings out of 492616
- 184445 string characters out of 6129482
- 296529 words of memory out of 5000000
- 16212 multiletter control sequences out of 15000+600000
+ 12662 strings out of 492616
+ 185592 string characters out of 6129482
+ 297221 words of memory out of 5000000
+ 16258 multiletter control sequences out of 15000+600000
  49790 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 32i,9n,38p,977b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,9n,38p,822b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
 cal/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texliv
 e/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2019/tex
@@ -800,10 +808,10 @@ f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fon
 ts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
 ublic/lm/lmsy5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
 sy7.pfb>
-Output written on homework_group.pdf (13 pages, 304288 bytes).
+Output written on homework_group.pdf (14 pages, 305498 bytes).
 PDF statistics:
- 350 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 74 named destinations out of 1000 (max. 500000)
- 10458 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
+ 10474 words of extra memory for PDF output out of 12000 (max. 10000000)
 

@@ -12,7 +12,7 @@ output:
 \newpage
 
 ```{r, include = FALSE, warning=FALSE, message=FALSE, error=FALSE} 
-list.of.packages <- c("tidyverse", "knitr", "haven", "stargazer", "dummies", "car", "AER", "dplyr", "readxl")
+list.of.packages <- c("tidyverse", "knitr", "haven", "stargazer", "dummies", "car", "AER", "dplyr", "readxl", "lmtest", "sandwich")
 new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
 if(length(new.packages)) install.packages(new.packages, repos = "http://cran.us.r-project.org")
 
@@ -23,6 +23,8 @@ library("haven")
 library("stargazer")
 library("dummies")
 library("readxl")
+library("lmtest")
+library("sandwich")
 
 df_wages <- read_excel("data/DataSetWages.xlsx")
 df_rates <- read_excel("data/DataSetInterestRates.xlsx")
@@ -429,7 +431,7 @@ Hence, we reject $H_0$ which means that $\sigma_1^2 \ne \sigma_2^2$. We consider
 
 \vspace{30pt}
 
-##Question 4
+## Question 4
 
 The effects of the presence of heteroskedasticity on the asymptotic properties of the OLS estimator are :
 
@@ -438,58 +440,13 @@ The effects of the presence of heteroskedasticity on the asymptotic properties o
 
 \vspace{30pt}
 
-##Question 5
+## Question 5
 
 ```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
-WSER4 <- vcovHC(R4, type = "HC1")
-R4W <- coeftest(R4, WSER4)
-stargazer(R4W,  header=FALSE, type='latex')
+WhiteSE_R4 <- vcovHC(R4, type = "HC0")
+R4White <- coeftest(R4, WhiteSE_R4)
+stargazer(R4White,  header=FALSE, type='latex')
 ```
-
-```{r, include=FALSE}
-wages80 <- wages[sample(nrow(wages), 380), ]
-wages50 <- wages[sample(nrow(wages), 237), ]
-wages20 <- wages[sample(nrow(wages), 94), ]
-```
-
-```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
-R4.80 <- lm(wages80$LOGSAL ~ wages80$EDUC + wages80$GENDER + wages80$MINORITY + wages80$JOBCAT2 + wages80$JOBCAT3)
-stargazer(R4.80,  header=FALSE, type='latex')
-WSER4.80 <- vcovHC(R4.80, type = "HC1")
-R4.80W <- coeftest(R4.80, WSER4.80)
-stargazer(R4.80W,  header=FALSE, type='latex')
-```
-
-```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
-R4.50 <- lm(wages50$LOGSAL ~ wages50$EDUC + wages50$GENDER + wages50$MINORITY + wages50$JOBCAT2 + wages50$JOBCAT3)
-stargazer(R4.50,  header=FALSE, type='latex')
-WSER4.50 <- vcovHC(R4.50, type = "HC1")
-R4.50W <- coeftest(R4.50, WSER4.50)
-stargazer(R4.50W,  header=FALSE, type='latex')
-```
-
-```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
-R4.20 <- lm(wages20$LOGSAL ~ wages20$EDUC + wages20$GENDER + wages20$MINORITY + wages20$JOBCAT2 + wages20$JOBCAT3)
-stargazer(R4.20,  header=FALSE, type='latex')
-WSER4.20 <- vcovHC(R4.20, type = "HC1")
-R4.20W <- coeftest(R4.20, WSER4.20)
-stargazer(R4.20W,  header=FALSE, type='latex')
-```
-
-\vspace{30pt}
-
-## Question 6
-
-
-
-# 3] Autocorrelation
-
-\vspace{20pt}
-
-## Question 1
-
-
-
 
 
 
