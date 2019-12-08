@@ -231,14 +231,15 @@ We can make a student test: $H_0: \beta_5 = 0$ versus $H_1: \beta_5 \neq 0$. The
 We have: $t_{\hat{\beta_5}}= {\hat{\beta_5} \over \hat{\sigma_5} }= {-0,042 \over 0,020}\simeq -2.1$.
 
 Hence, $\mid t_{\hat{\beta_5}} \mid = 2.1 > t(469) \in [1,960;1,984]$. 
-We rejct $H_0$, which means that the variable *minority* is significant and relevant to explain wages.
+We reject $H_0$, which means that the dummy variable *minority* is significant and relevant to explain wages.
 
 \vspace{20pt}
 
 ## Question 5
 
 We can make a Fisher test and test the hypothesis: $H_0: \beta_4=\beta_5=0$.
-We can rewrite the hypothesis: $H_0$: $\quad \begin{pmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ \end{pmatrix}$ $\quad \begin{pmatrix} \beta_1 \\ \beta_2\\ \beta_3\\\beta_4\\\beta_5\\ \end{pmatrix}$ =$\quad \begin{pmatrix} 0 \\ 0 \\ 0\\  0\\ 0\\ \end{pmatrix}$.       
+We can rewrite the hypothesis:
+$H_0$: $\quad \begin{pmatrix} 0 & 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 0 & 1 \\ \end{pmatrix}$ $\quad \begin{pmatrix} \beta_1 \\ \beta_2\\ \beta_3\\\beta_4\\\beta_5\\ \end{pmatrix}$ =$\quad \begin{pmatrix} 0 \\ 0 \\ 0\\  0\\ 0\\ \end{pmatrix}$.       
 
 ```{r, include= FALSE}
 Q5 <- lm(LOGSAL ~ EDUC + SALBEGIN, data = df_wages)
@@ -248,7 +249,6 @@ anova(Q5)
 We can test whether this hypothesis is accepted or reject by making a Fisher test. The statistic is:     
 
 $F= {RSS_{c} - RSS_{nc} \over RSS_{nc}}.{df_{c} \over df_c -df_{nc}} = {R^2_{nc}-R^2_{c} \over 1-R^2_{nc}}.{df_{c} \over df_c -df_{nc}}$
-
 
 We have that SSR of the constrained model is equal to 18.532 (with 471 df). The SSR of the unconstrained model is 16,900 (with 469 df).     
 
@@ -444,9 +444,59 @@ The effects of the presence of heteroskedasticity on the asymptotic properties o
 
 ```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
 WhiteSE_R4 <- vcovHC(R4, type = "HC0")
-R4White <- coeftest(R4, WhiteSE_R4)
-stargazer(R4White,  header=FALSE, type='latex')
+R4_White <- coeftest(R4, WhiteSE_R4)
+stargazer(R4_White,  header=FALSE, type='latex')
 ```
+```{r, include=FALSE}
+#Create smaller samples by randomly selecting 80%, 50% and 20% of the observations
+df_wages80 <- df_wages %>% sample_frac(.8)
+df_wages50 <- df_wages %>% sample_frac(.5)
+df_wages20 <- df_wages %>% sample_frac(.2)
+```
+
+```{r, echo = FALSE, results='asis', warning=FALSE, error=FALSE, message=FALSE }
+#Estimate OLS with the usual standard errors and with White standard errors
+
+#For the sample with 80% of the observations
+R4.80 <- lm(LOGSAL ~ EDUC + GENDER + MINORITY + JOBCAT2 + JOBCAT3, data = df_wages80)
+stargazer(R4.80,  header=FALSE, type='latex')
+
+WhiteSE_R4.80 <- vcovHC(R4.80, type = "HC0")
+
+R4.80_White <- coeftest(R4.80, WhiteSE_R4.80)
+stargazer(R4.80_White,  header=FALSE, type='latex')
+
+#50% of the observations
+R4.50 <- lm(LOGSAL ~ EDUC + GENDER + MINORITY + JOBCAT2 + JOBCAT3, data = df_wages50)
+stargazer(R4.50,  header=FALSE, type='latex')
+
+WhiteSE_R4.50 <- vcovHC(R4.50, type = "HC0")
+
+R4.50_White <- coeftest(R4.50, WhiteSE_R4.50)
+stargazer(R4.50_White,  header=FALSE, type='latex')
+
+#20% of the observations
+R4.20 <- lm(LOGSAL ~ EDUC + GENDER + MINORITY + JOBCAT2 + JOBCAT3, data = df_wages20)
+stargazer(R4.20,  header=FALSE, type='latex')
+
+WhiteSE_R4.20 <- vcovHC(R4.20, type = "HC0")
+
+R4.20_White <- coeftest(R4.20, WhiteSE_R4.20)
+stargazer(R4.20_White,  header=FALSE, type='latex')
+```
+
+\vspace{30pt}
+
+## Question 6
+
+
+
+# 3] Autocorrelation
+
+\vspace{20pt}
+
+## Question 1
+
 
 
 

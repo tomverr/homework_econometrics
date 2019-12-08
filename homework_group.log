@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.9)  8 DEC 2019 13:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.9.9)  8 DEC 2019 15:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -544,6 +544,24 @@ LaTeX Warning: Label `' multiply defined.
 
 LaTeX Warning: Label `' multiply defined.
 
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
+
+LaTeX Warning: Label `' multiply defined.
+
 )
 \openout1 = `homework_group.aux'.
 
@@ -711,7 +729,7 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 115.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-<homework_group_files/figure-latex/unnamed-chunk-4-1.pdf, id=149, 279.0425pt x 
+<homework_group_files/figure-latex/unnamed-chunk-4-1.pdf, id=164, 279.0425pt x 
 206.7725pt>
 File: homework_group_files/figure-latex/unnamed-chunk-4-1.pdf Graphic file (typ
 e pdf)
@@ -720,7 +738,7 @@ Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-4-1.pd
 f  used on input line 163.
 (pdftex.def)             Requested size: 279.05032pt x 206.77829pt.
 [3 <./homework_group_files/figure-latex/unnamed-chunk-4-1.pdf>]
-<homework_group_files/figure-latex/unnamed-chunk-5-1.pdf, id=168, 279.0425pt x 
+<homework_group_files/figure-latex/unnamed-chunk-5-1.pdf, id=183, 279.0425pt x 
 206.7725pt>
 File: homework_group_files/figure-latex/unnamed-chunk-5-1.pdf Graphic file (typ
 e pdf)
@@ -742,7 +760,7 @@ T1/lmr/m/n/10 (-20) =
  []
 
 [9] [10]
-<homework_group_files/figure-latex/unnamed-chunk-22-1.pdf, id=243, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-1.pdf, id=258, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-1.pdf Graphic file (ty
 pe pdf)
@@ -750,7 +768,7 @@ pe pdf)
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-22-1.p
 df  used on input line 633.
 (pdftex.def)             Requested size: 283.06975pt x 207.78523pt.
-<homework_group_files/figure-latex/unnamed-chunk-22-2.pdf, id=244, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-2.pdf, id=259, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-2.pdf Graphic file (ty
 pe pdf)
@@ -758,7 +776,7 @@ pe pdf)
 Package pdftex.def Info: homework_group_files/figure-latex/unnamed-chunk-22-2.p
 df  used on input line 635.
 (pdftex.def)             Requested size: 283.06975pt x 207.78523pt.
-<homework_group_files/figure-latex/unnamed-chunk-22-3.pdf, id=245, 283.0575pt x
+<homework_group_files/figure-latex/unnamed-chunk-22-3.pdf, id=260, 283.0575pt x
  207.77625pt>
 File: homework_group_files/figure-latex/unnamed-chunk-22-3.pdf Graphic file (ty
 pe pdf)
@@ -769,24 +787,25 @@ df  used on input line 637.
 [11 <./homework_group_files/figure-latex/unnamed-chunk-22-1.pdf> <./homework_gr
 oup_files/figure-latex/unnamed-chunk-22-2.pdf>] [12 <./homework_group_files/fig
 ure-latex/unnamed-chunk-22-3.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 801.
-[13] [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 801.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1039.
+[13] [14] [15] [16] [17] [18] [19] [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1039.
 (./homework_group.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 801.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 801.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1039.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1039.
+
 Package rerunfilecheck Info: File `homework_group.out' has not changed.
-(rerunfilecheck)             Checksum: 80F1D1B453B0C53F756178273DD5F51F;2645.
+(rerunfilecheck)             Checksum: 35D61ED11185365C3372E521E27A28AB;3004.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12662 strings out of 492616
- 185592 string characters out of 6129482
- 297221 words of memory out of 5000000
- 16258 multiletter control sequences out of 15000+600000
- 49790 words of font info for 76 fonts, out of 8000000 for 9000
+ 12692 strings out of 492616
+ 185900 string characters out of 6129482
+ 316339 words of memory out of 5000000
+ 16264 multiletter control sequences out of 15000+600000
+ 50086 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  35i,9n,38p,822b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
@@ -808,10 +827,10 @@ f-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2019/texmf-dist/fon
 ts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
 ublic/lm/lmsy5.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/lm/lm
 sy7.pfb>
-Output written on homework_group.pdf (14 pages, 305498 bytes).
+Output written on homework_group.pdf (20 pages, 311353 bytes).
 PDF statistics:
- 368 PDF objects out of 1000 (max. 8388607)
- 318 compressed objects within 4 object streams
- 80 named destinations out of 1000 (max. 500000)
- 10474 words of extra memory for PDF output out of 12000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 98 named destinations out of 1000 (max. 500000)
+ 10498 words of extra memory for PDF output out of 12000 (max. 10000000)
 
